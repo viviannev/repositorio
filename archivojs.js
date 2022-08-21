@@ -10,4 +10,4 @@ console.log(promise)
 console.log(typeof promise)
 
 let asd = JSON.stringify(promise);
-console.log(asd);
+console.log(catID);
