@@ -10,10 +10,11 @@ console.log(promise)
 console.log(typeof promise)
 
 
+function creardiv(){
 let div = document.createElement('div');
     div.id = 'container';
     div.innerHTML = 'Hi there!';
-
+}
   
 
   
