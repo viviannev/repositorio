@@ -1,13 +1,18 @@
-let promise = fetch ('https://japceibal.github.io/emercado-api/cats_products/101.json')
+fetch('https://japceibal.github.io/emercado-api/cats_products/101.json')
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    appendData(data);
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
 
-.then(response => response.json)
-.then(data => console.log(data))
-.catch(error => console.log(error))
+let div = document.createElement('div');
+    div.id = 'container';
+    div.innerHTML = 'Hi there!';
 
+  
 
-
-console.log(promise) 
-console.log(typeof promise)
-
-let asd = JSON.stringify(promise);
-console.log(promise.products);
+  
