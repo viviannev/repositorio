@@ -11,9 +11,9 @@ console.log(typeof promise)
 
 
 function creardiv(){
-let div = document.createElement('div');
-    div.id = 'container';
-    div.innerHTML = 'Hi there!';
+let div = document.createElement('p');
+    p.id = 'container';
+    p.innerHTML = 'Hi there!';
 }
   
 
