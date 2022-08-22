@@ -1,8 +1,20 @@
-let promise = fetch ('https://japceibal.github.io/emercado-api/cats_products/101.json')
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Products</title>
+</head>
+<body>
+    <div id="myData"></div>
+    <script>
+     fetch ('https://japceibal.github.io/emercado-api/cats_products/101.json')
 .then(response => response.json)
  .then(function (data) {
-    console.log(data.products);
+      var mainContainer = document.getElementById("myData");
+  for (let i = 0; i < data.length; i++) {
+    var div = document.createElement("div");
+    div.innerHTML = 'Id: ' + data[i].id + br + 'Name: ' + data[i].name + br + 'Description: ' + data[i].description + br + 'Cost: ' + data[i].cost + br + 'Currency: ' + data[i].currency + br + 'SoldCount: ' + data[i].soldCount + br + 'Image: ' + data[i].image;
+ mainContainer.appendChild(div);
+  }
   })
 .catch(error => console.log(error))
 
