@@ -1,42 +1,20 @@
-function showTable(){
-  fetch('https://japceibal.github.io/emercado-api/cats_products/101.json')
-    .then(response => response.json())
-    .then(data => createTable(data));
-}
+let promise = fetch ('https://japceibal.github.io/emercado-api/cats_products/101.json')
 
-function createTable(data) {
-var table = "<table border=1>";
-// add a row for name and marks
-table += `<tr>
-            <th>Products</th>
-          </tr>`;
-// now add another row to show subject
-table += `<tr>
-            <th></th>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Cost</th>
-            <th>Currency</th>
-            <th>SoldCount</th>
-            <th>Image</th>
-          </tr>`;
-// now loop through students
-// show their name and marks
-var tr = "";
-for(let i = 0; i < data.products.length; i++) {
-  tr += "<tr>";
-  tr += `<td>${data.products[i].id}</td>`;
-  tr += `<td>${data.products[i].name}</td>`;
-  tr += `<td>${data.products[i].description}</td>`;
-  tr += `<td>${data.products[i].cost}</td>`;
-  tr += `<td>${data.products[i].currency}</td>`;
-  tr += `<td>${data.products[i].soldCount}</td>`;
-  tr += `<td>${data.products[i].image}</td>`;
-  tr += "</tr>"
-}
-table += tr + "</table>";
+.then(response => response.json)
+.then(data => console.log(data))
+.catch(error => console.log(error))
 
-  // append table to body
-  document.body.innerHTML += table;
+
+
+console.log(promise) 
+console.log(typeof promise)
+
+var mainContainer = document.getElementById("myData");
+function appendData(data) {
+  var mainContainer = document.getElementById("myData");
+  for (var i = 0; i < data.length; i++) {
+    var div = document.createElement("div");
+    div.innerHTML = 'Id: ' + data[i].id + br + 'Name: ' + data[i].name + br + 'Description: ' + data[i].description + br + 'Cost: ' + data[i].cost + br + 'Currency: ' + data[i].currency + br + 'SoldCount: ' + data[i].soldCount + br + 'Image: ' + data[i].image;
+ mainContainer.appendChild(div);
+  }
 }
