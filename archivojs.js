@@ -18,6 +18,3 @@ var mainContainer = document.getElementById("myData");
                 div.innerHTML = 'Id: ' + data[i].id + br + 'Name: ' + data[i].name + br + 'Description: ' + data[i].description + br + 'Cost: ' + data[i].cost + br + 'Currency: ' + data[i].currency + br + 'SoldCount: ' + data[i].soldCount + br + 'Image: ' + data[i].image;
                 mainContainer.appendChild(div);
             }
-  
-
-  
