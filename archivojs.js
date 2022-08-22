@@ -3,12 +3,7 @@ let promise = fetch ('https://japceibal.github.io/emercado-api/cats_products/101
     return response.json();
   })
   .then(function (data) {
-    appendData(data);
-  })
-  .catch(function (err) {
-    console.log(err);
-  });
-var mainContainer = document.getElementById("myData");
+  var mainContainer = document.getElementById("myData");
 function appendData(data) {
   var mainContainer = document.getElementById("myData");
   for (let i = 0; i < data.length; i++) {
@@ -16,6 +11,11 @@ function appendData(data) {
     div.innerHTML = 'Id: ' + data[i].id + br + 'Name: ' + data[i].name + br + 'Description: ' + data[i].description + br + 'Cost: ' + data[i].cost + br + 'Currency: ' + data[i].currency + br + 'SoldCount: ' + data[i].soldCount + br + 'Image: ' + data[i].image;
  mainContainer.appendChild(div);
   }
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
+
 }
 
 
