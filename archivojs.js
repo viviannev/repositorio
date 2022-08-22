@@ -1,4 +1,15 @@
-fetch ('https://japceibal.github.io/emercado-api/cats_products/101.json')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Products</title>
+</head>
+<body>
+    <div id="myData"></div>
+    <script>
+     fetch ('https://japceibal.github.io/emercado-api/cats_products/101.json')
  .then(function (response) {
     return response.json();
   })
@@ -17,4 +28,7 @@ function appendData(data) {
  mainContainer.appendChild(div);
   }
 }
+  </script>
+</body>
+</html>
 
