@@ -35,7 +35,7 @@ fetch ('https://japceibal.github.io/emercado-api/cats_products/101.json')
                  "Cost: " + data.products[4].cost + "<br />" +
                  "Currency: " + data.products[4].currency + "<br />" +
                  "SoldCount: " + data.products[4].soldCount + "<br />" +
-                 "Image: " + data.products[4].image + "<br />" +
+                 "Image: " + data.products[4].image
               })
 .catch(error => console.log(error))
 
