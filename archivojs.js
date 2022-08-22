@@ -1,7 +1,7 @@
 fetch ('https://japceibal.github.io/emercado-api/cats_products/101.json')
 .then(response => response.json())
 .then(data => { console.log(data)
-               myData.innerHTML = "Products: " + "<br />" + "<br />" + "Id: " + data.products[0].id + "<br />" +
+               myData.innerHTML = "<br />" + "Products: " + "<br />" + "<br />" + "Id: " + data.products[0].id + "<br />" +
                  "Name: " + data.products[0].name + "<br />" +
                  "Description: " + data.products[0].description + "<br />" +
                  "Cost: " + data.products[0].cost + "<br />" +
