@@ -11,6 +11,6 @@ console.log(typeof promise)
 
  function appendData(data) {
             promise.forEach(let i = 0; i < data.length; i++) {
-                var div = document.createElement("div");    
+                let div = document.createElement("div");    
                 document.getElementById("myData").innerHTML = 'Id: ' + data[i].id + br + 'Name: ' + data[i].name + br + 'Description: ' + data[i].description + br + 'Cost: ' + data[i].cost + br + 'Currency: ' + data[i].currency + br + 'SoldCount: ' + data[i].soldCount + br + 'Image: ' + data[i].image;
             }}
