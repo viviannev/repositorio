@@ -12,10 +12,7 @@ let promise = fetch ('https://japceibal.github.io/emercado-api/cats_products/101
   }
 }
   
-.catch(function (err) {
-    console.log(err);
-   });
-
+.catch(error => console.log(error))
  
 
 
