@@ -12,7 +12,7 @@ function appendData(data) {
  mainContainer.appendChild(div);
   }}});
   
-.catch(error => console.log(error))
+
 
  
 
