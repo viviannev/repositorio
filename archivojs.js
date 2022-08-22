@@ -10,4 +10,4 @@ console.log(promise)
 console.log(typeof promise)
 
 let listado = JSON.stringify(promise);
-console.log(listado);
+console.log(listado.{});
