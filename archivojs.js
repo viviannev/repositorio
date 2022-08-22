@@ -1,4 +1,4 @@
-const promise = fetch ('https://japceibal.github.io/emercado-api/cats_products/101.json')
+let promise = fetch ('https://japceibal.github.io/emercado-api/cats_products/101.json')
  .then(function (response) {
     return response.json();
   })
@@ -12,7 +12,9 @@ const promise = fetch ('https://japceibal.github.io/emercado-api/cats_products/1
   }
 }
   
-
+.catch(function (err) {
+    console.log(err);
+   });
 
  
 
