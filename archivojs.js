@@ -5,7 +5,7 @@ const promise = fetch ('https://japceibal.github.io/emercado-api/cats_products/1
   .then(function (data) {
 function appendData(data) {
   let m1 = document.getElementById("myData");
-  promise.forEach ( i < data.length; i++) {
+  promise.forEach (( i < data.length; i++) {
     document.getElementById("myData").innerHTML = 'Id: ' + data[i].id + br + 'Name: ' + data[i].name + br + 'Description: ' + data[i].description + br + 'Cost: ' + data[i].cost + br + 'Currency: ' + data[i].currency + br + 'SoldCount: ' + data[i].soldCount + br + 'Image: ' + data[i].image;
 
   }}});
