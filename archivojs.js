@@ -8,3 +8,6 @@ let promise = fetch ('https://japceibal.github.io/emercado-api/cats_products/101
 
 console.log(promise) 
 console.log(typeof promise)
+
+let listado = JSON.stringify(promise);
+console.log(listado);
